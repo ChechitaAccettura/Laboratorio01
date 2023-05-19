@@ -1,0 +1,27 @@
+body {
+    background-image: url(https://thumbs.dreamstime.com/b/fondo-para-el-dise%C3%B1o-gr%C3%A1fico-forma-del-modelo-al-azar-movimiento-web-y-color-113807045.jpg) ;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: cursive;
+    color: blueviolet;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blue;
+}
+
+p {
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkblue;
+}
+
+#piedepagina {
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: darkslateblue;
+}
