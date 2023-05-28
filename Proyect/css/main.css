@@ -1,0 +1,103 @@
+body {
+    background-image: url(/Proyect/images/pared-cemento-ladrillos_1154-670.jpg);
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color: grey;
+    
+}
+
+:root {
+    --title: 'Lato';
+    --subtitle: 'Playfair Display';
+    --color-primary: #636acf34; 
+    --color-secundary: #eed28585;
+    --size-xl: 40px;
+    --size-m: 20px;
+    --size-s: 10px;
+}
+
+header{
+    width: 100vw;
+    background-color: rgba(226, 43, 195, 0.521);
+    font-size: var(--size-xl);
+}
+
+.titulo {
+    font-size: var(--size-xl);
+}
+
+aside {
+    width: 50%;
+    background-color: var(--color-primary);
+}
+
+main {
+    width: 45vw;
+    background-color: var(--color-secundary);
+    float: right;
+    padding: 30px 0px 55px 0px;
+}
+button {
+    color: rgb(98, 77, 117);
+    background-color: rgba(236, 222, 140, 0.411);
+    border: 1px solid grey;
+    padding: 15px;
+    border-radius: 10px 0px 10px 0px;
+    box-sizing: border-box;
+}
+
+#menu {
+    margin: auto;
+    padding: 20px 10px 50px 10px;
+    width: 50vw;
+    float: left;
+}
+#menu ul{
+    list-style: none;
+
+}
+
+#menu ul li a{
+    padding: 0px 10px 0px 10px;
+    border-right: 1px solid white;
+    float: right;
+    text-decoration: none;
+    font-weight: bolder;
+}
+#menu ul li a:hover {
+    color: black;
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+}
+
+#menuV  {
+    width: 100vw;
+    height: 50vh;
+    padding: 10px 0px 10px;
+    margin:  3px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#menuV li {
+padding: 12px;
+}
+
+#menuV a:hover {
+    box-shadow: 2px 2px 2px 2px rgba(77, 70, 70, 0.726);
+    border-radius: 2px;
+    color: red;
+    padding: 10px 20px 10px 20px;
+}
+
+
+footer {
+    height: 15vh;
+    width: 100vw;
+    background-color: darkorange;
+    
+}
