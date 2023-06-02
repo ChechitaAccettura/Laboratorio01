@@ -14,7 +14,7 @@ header {
     height: 70px;
     padding: 10px
 } 
-
+/*
 header nav ul li {
     list-style-type: none;
     float: left;
@@ -31,7 +31,7 @@ header nav ul li a:hover {
     font-weight: bold;
     border-radius: 1px 15px 1px 15px;
 }
-
+*/
 body {
     background-image: url("/images/fondo-acuarela-pintada-mano-forma-cielo-nubes_24972-1095.avif");
     background-size: cover;
@@ -111,3 +111,129 @@ article img {
     float: left;
     width: 50%;
 }
+
+.datosdeproducto {
+    float: right;
+    padding: 20 px;
+    width: 50%;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+}
+
+.nombredeproducto, .precio {
+    float: right;
+    font-weight: bold;
+}
+
+.precio {
+    margin: 0px 8px;
+    color: red
+}
+
+.precio:hover {
+    text-shadow: 1px 1px 1px black;
+}
+
+.colores ul li {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    height: 30 px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 15 px;
+    
+}
+
+#color1 {
+    background-color: chocolate;
+}
+
+#color2 {
+    background-color: rgb(0, 0, 0);
+}
+
+#color3 {
+    background-color: rgb(50, 67, 219);
+}
+
+#color4 {
+    background-color: rgb(255, 255, 255);
+}
+
+aside article { 
+    background-color: rgb(105, 96, 84);
+    border-color: rgb(153, 250, 218);
+    border-radius: 15px;
+}
+
+.oculto {
+    display: none;
+}
+
+/*menu desplegable */ 
+.menuinicio {
+    margin: 15px;
+}
+
+.menuinicio ul {
+    list-style: none;
+    float: left;
+    margin: 0px;
+    padding: 1px;
+    position: relative;
+}
+
+.menuinicio ul a {
+    text-shadow: 1px gray;
+    display: block;
+    color:rgb(248, 241, 241);
+    text-decoration: none;
+    padding: 15px;
+    line-height: 2px;
+}
+
+.menuinicio ul li {
+    position: relative; 
+    float: left;
+    padding: 10px;
+    text-shadow: 1px black;
+}
+
+.menuinicio ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(248, 252, 255);
+    padding: 0px;
+}
+
+.menuinicio ul ul li {
+    float: left;
+}
+
+.menuinicio ul ul a{
+    margin: 0px;
+    color: black;
+    padding: 10px;
+}
+
+.menuinicio ul li:hover > ul {
+    display: block;
+    border: 1px solid slategray;
+    border-radius: 5px;
+    text-align: center;
+    text-overflow: unset;
+    width: 120px;
+    text-shadow: 1px slateblue;
+}
+
+.menuinicio ul ul a:hover {
+    background-color: rgb(1, 1, 7);
+    color: white;
+    padding: 10px;
+}
+
+
+

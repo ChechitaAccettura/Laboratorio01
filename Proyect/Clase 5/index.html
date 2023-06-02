@@ -18,13 +18,32 @@
 <body>
     <div>
         <header> 
-            <nav>
+            <nav class="oculto">
                 <ul>
-                    <li><a href="http://" target="_blank" >Inicio</a></li>
+                    <li><a href="http://" target="_blank" >Inicio</a> </li>
                     <li><a href="http://" target="_blank" >Servicios</a></li>
-                    <li><a href="http://" target="_blank" >Blog</a></li>
+                    <li><a href="http://" target="_blank"> Blog </a></li>
                 </ul>
-            </nav>>
+            </nav>
+
+            <nav class="menuinicio">
+                <ul>
+                    <li><a href="http://" target="_blank" >Inicio</a> </li>
+                    <li><a href="http://" target="_blank" >Servicios</a>
+                    <ul>
+                        <li><a href="#" target="_blank"> Sevicio Uno</a></li>
+                        <li><a href="#" target="_blank"> Sevicio Dos</a></li>
+                        <li><a href="#" target="_blank"> Sevicio Tres</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="http://" target="_blank" >Blog</a>
+                    <ul>
+                        <li> <a href="#" target="_blank"> Un Blog</a></li>
+                        <li> <a href="#" target="_blank"> Otro Blog</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
         <main> Soy un Main.
@@ -47,13 +66,14 @@
             <article>
                 <img src="/images/fondos-musicales.jpg" alt="Musica" >
                 <div class="datosdeproducto">
-                    <div class="nombredeproducto"> Auriculares
-
-                    </div>
+                    <div class="nombredeproducto"> Auriculares </div>
+                    <div class="precio"> $50,15 </div>
                     <div class="colores">
                         <ul>
-                            <li> ...</li>
-                            <li> ...</li>
+                            <li id="color1"> </li>
+                            <li id="color2"> </li>
+                            <li id="color3"> </li>
+                            <li id="color4"> </li>
                         </ul>
 
                     </div>
