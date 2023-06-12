@@ -78,3 +78,16 @@ aside section form button :hover {
 aside form textarea {
     resize: none;
 }
+
+.scroll {
+    overflow: scroll;
+    width: 30%;
+    height: 30%;
+    clear: both;
+}
+
+::-webkit-scrollbar {
+    background-color: blue;
+}
+
+/* mejor que el float usar flexbox
