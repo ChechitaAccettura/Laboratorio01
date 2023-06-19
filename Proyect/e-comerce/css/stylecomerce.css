@@ -97,23 +97,17 @@ form button:hover{
 .menu li:hover{
     background-color:  rgba(174, 174, 231, 0.993);
     border: 1px solid rgb(99, 75, 87);
-    border-radius: 0px 10px 0px 10px;
+    border-radius: 0px 10px 10px 10px;
     cursor: pointer;
 }
 
 .desplegable li{ 
     display: none;
-    box-sizing: border-box;
-    width: 150px;
-    margin: 0px;
-    padding: 10px;
-    position: absolute;
-    overflow: unset;
-    background-color:  rgba(174, 174, 231, 0.993);
 }
 
 .menu li:hover > .desplegable li {
     display: block;
+    position: relative; 
 }
 
 aside {
