@@ -22,8 +22,8 @@ header {
 }
 
 header a {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     background-image: url("/images/sitioseguro.jpg");
     background-size: cover;
     padding: 50px;
@@ -32,5 +32,12 @@ header a {
     text-decoration: none;
     text-align: center;
     text-justify: center;
-    justify-self: center;
+    position: absolute;
+    left: 550px;
+}
+
+header a:hover {
+    box-shadow: 3px 3px 3px 3px black;
+    width: 95px;
+    height: 95px;
 }
