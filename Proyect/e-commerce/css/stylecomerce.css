@@ -101,20 +101,17 @@ form button:hover{
     cursor: pointer;
 }
 
+.desplegable {
+    
+}
 .desplegable li{ 
     display: none;
-    position:relative;
-    padding: 10px;
-    margin: 0px;
-    width: 150px;
-    height: auto;
-    text-overflow: unset;
 }
 
 .menu li:hover > .desplegable li {
     display: block;
-    
-
+    position: absolute;
+    overflow: inherit;  
 }
 
 aside {
