@@ -85,6 +85,8 @@ form button:hover{
 .menu ul {
     display: flex;
     box-sizing: border-box;
+    margin: 0px;
+    padding: 10px;
 }
 
 .menu li {
@@ -104,16 +106,14 @@ form button:hover{
 .desplegable li{ 
     display: none;
     box-sizing: border-box;
-    width: 150px;
-    margin: 0px;
-    padding: 10px;
-    position: absolute;
+    width: 200px;
     overflow: unset;
     background-color:  rgba(174, 174, 231, 0.993);
 }
 
 .menu li:hover > .desplegable li {
     display: block;
+    position: absolute;
 }
 
 aside {
@@ -153,7 +153,6 @@ height: 700px;
 display: grid;
 gap: 15px;
 grid-template-columns: auto auto auto;
-
 }
 
 .escrolable .card {
