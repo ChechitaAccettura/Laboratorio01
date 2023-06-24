@@ -9,8 +9,21 @@
     <title>Suscripcion</title>
 </head>
 <body>
-    <form action="">
-        
-    </form>
+
+        <form action="" method="get">
+            <div class="paginadeform">
+                <label for="name"> <i class="fa-solid fa-user"></i> Nombre</label> <br>
+                <input class="item1" type="text" required placeholder="Nombre"><br>
+                <label for="mail"><i class="fa-solid fa-at"></i>Correo electrónico</label><br>
+                <input class="item1" type="mail" required placeholder="e-mail"><br>
+                <label for="intereses"> <i class="fa-regular fa-face-smile-wink"></i> Me interesa recibir novedades sobre:</label><br>
+                <select class="item1" name="intereses" id="">
+                    <option class="item1" value="instrumentos">Instrumentos musicales</option>
+                    <option class="item1" value="presentaciones">Presentaciones de artistas en vivo</option>
+                </select><br>
+                <button type="submit"> Enviar <i class="fa-solid fa-paper-plane"></i> </button>
+            </div>
+        </form>
+
 </body>
 </html>
