@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/020c2b5f5e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Public/css/Style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            Formulario de carga
+        </header>
+
+        <form action="/form.php" method="post">
+            <fieldset class="case">
+                <legend> <i class="fa-solid fa-user"></i>  Datos Personales </legend>
+                <label for="name"> Nombres</label> 
+                <input type="text" name="name" required placeholder="Ingrese su nombre"> 
+                <label for="apellido">Apellidos</label> 
+                <input type="text" name="apellido" required placeholder="Ingrese sus apellidos">
+                <label for="cumpleaños">Cumpleaños</label>
+                <input type="date">
+                
+                
+            </fieldset>
+            <fieldset class="case">
+                <legend> <i class="fa-solid fa-paper-plane"></i> Contacto y login </legend>
+                <label for="mail">e-mail</label>
+                <input type="email" name="mail" required placeholder="Correo electrónico">
+                <label for="pass">Contraseña</label>
+                <input type="password" name="pass" required placeholder="Password" maxlength="10" minlength="6">
+            </fieldset>
+            <fieldset class="case">
+                <label for="genero"><i class="fa-solid fa-transgender"></i> Genero</label>
+                <select name="genero" id="">
+                    <option value="blank"></option>
+                    <option value="f">Femenino</option>
+                    <option value="m">Masculino</option>
+                    <option value="n">No binario</option>
+                    <option value="p">Prefiero no decirlo</option>
+                </select>
+                <label for="intereses">Intereses</label>
+                Cine<input type="checkbox">Libros<input type="checkbox">Café<input type="checkbox">Música<input type="checkbox">
+                <label for="comentario"><i class="fa-solid fa-pencil"></i> Comentarios</label>
+                <textarea name="comentario" id="" cols="30" rows="5"></textarea>
+                <br>
+                <br>
+                <input type="file">
+                <label for="ingreso">¿Cómo llegaste a este formulario?</label>
+                <input type="text" readonly value="Potrero Digital">
+                <label for="satisfaccion">¿Cuánto te gustó esta página? <i class="fa-solid fa-heart"></i></label>
+                <input type="range">
+            </fieldset>
+            <button type="submit" onclick="alert('Formulario enviado.')" >Enviar Formulario</button>
+            <button type="reset" onclick="alert ('Sus datos no han sido enviados, reingrese el formulario.')">Limpiar Formulario</button>
+
+        </form>
+
+    </div>
+</body>
+</html>

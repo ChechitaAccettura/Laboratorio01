@@ -1,0 +1,85 @@
+body {
+    background-color: azure;
+    font-size: 25px;
+    margin: 3px;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    gap: 10px;
+}
+
+.gridcontainer > *{
+    background-color: rgb(176, 130, 219);
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+
+header {
+    font-size: 2rem;
+}
+
+header, footer, nav {
+    grid-column: 1 / span 3;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 15px;
+}
+
+nav ul li:hover{
+    color: black;
+    background-color: aliceblue;
+    border-radius: 4px;
+}
+
+main{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+
+}
+main >* {
+    background-color: aqua;
+    border: 2px solid black;
+    margin: 5px;
+    text-align: center;
+    height: 200px;
+}
+
+.imagen img {
+    max-width: 90%;
+    margin-left: 5px;
+    height: auto;
+    border-radius: 5px;
+    transition: 0.5 all ease-in-out;
+}
+
+.imagen img:hover {
+    transform: scale(1.1);
+}
+
+/*MEDIA QUERIS*/
+
+@media (max-width: 400px) {
+    aside, main, article {
+        grid-column: 1 / span 3;
+    }
+    main {
+        grid-template-columns: auto;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    article {
+        display: none;
+    }
+}
