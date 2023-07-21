@@ -1,5 +1,5 @@
 body {
-    background-image: url(/images/fondositioseguro.jpg);
+    background-image: url(images/fondositioseguro.jpg);
     background-size: cover;
     backdrop-filter: blur(7px);
     padding: 0px;
@@ -24,7 +24,7 @@ header {
 header a {
     width: 90px;
     height: 90px;
-    background-image: url("/images/sitioseguro.jpg");
+    background-image: url("images/sitioseguro.jpg");
     background-size: cover;
     padding: 50px;
     border-radius: 50%;
