@@ -8,7 +8,7 @@ var numero;
 var resultado;
 
 var operacion; //** esta variable podria obtenerse de esta manera 
-// **var operacion = document.getElementById = operacion.value ... en un input donde el usuario
+// **var operacion = document.getElementById = operacion.value ... en un input (o prompt)donde el usuario
 //decida que operacion quiere ejecutar **//
 
 // calcular el numero mayor y el menor de tres varibles//
@@ -19,7 +19,7 @@ if (unNumero > otroNumero && unNumero > tercerNumero) {
     numeroElegido = otroNumero;
 } else if (tercerNumero > unNumero && tercerNumero > otroNumero) {
     numeroElegido = tercerNumero;
-}
+} 
 console.log ("El número mayor de tres variables es ", numeroElegido);
 
 //   --- otra forma con operador ternario ---//
