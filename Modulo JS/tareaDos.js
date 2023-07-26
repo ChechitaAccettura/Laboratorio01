@@ -8,6 +8,8 @@ let tercerNumero= Number (prompt("Ingrese el valor tres: "));
 
 if (!Number(unNumero) || !Number(otroNumero) || !Number(tercerNumero)) {
     console.log ("Ingrese sólo caracteres numéricos");
+} else if (unNumero == otroNumero || unNumero == tercerNumero || otroNumero == tercerNumero) {
+    console.log ("Los números no pueden repetirse")
 } else if (unNumero > otroNumero && unNumero > tercerNumero) {
     console.log("El número mayor de tres variables es ", unNumero);
 } else if (otroNumero > unNumero && otroNumero > tercerNumero) {
@@ -58,18 +60,5 @@ if ( !Number(z)) {
 for (let i=1; i<=10; i++){
     let resultado = i;
     console.log(z*i, " / ", z, " = ", resultado);
-    }
-}
-
-// --- La tercera es la vencida ... ---//
-
-let n= Number (prompt("Ingrese el valor que desea en la tabla de dividir: "));
-
-if ( !Number(n)) {
-    console.log ("Ingrese sólo caracteres numéricos");
-} else {
-for (let i=1; i<=10; i++){
-    let resultado = n/i;
-    console.log(i, " / ", n, " = ", resultado);
     }
 }
