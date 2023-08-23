@@ -1,5 +1,0 @@
-#json
-*.json
-
-#directory
-node_modules

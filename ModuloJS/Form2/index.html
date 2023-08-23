@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>REPASO DEL DOM</title>
+</head>
+<body>
+
+    ------------------------------
+    <!-- ELEMENTO DESDE LAS LISTA -->
+    <br>
+    <input id="listInput" > 
+    <div id="addElemts" >
+    <button type="button" onclick="addButtonList()">agregar elementos</button>
+    </div>
+    <div id="updateElemts" class="oculto">
+        <button type="button" onclick="modificarButton()">modificar elementos</button>
+        <button type="button" onclick="showHiddenButton(1)"> Cancelar</button>
+    </div>
+    <br>
+    <table>
+        <thead>
+            <th>Elementos</th>
+            <th>Acciones</th>
+        </thead>
+        <tbody id="listadoElementos">
+            <tr>
+                <td colspan="2">SIN REGISTRO</td>
+            </tr>
+        </tbody>
+        </table>
+
+
+<script src="index.js"></script>
+</body>
+</html>

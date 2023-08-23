@@ -106,8 +106,25 @@ let personaElegida = prompt("Ingrese el criterio de búsqueda: ");
 const findPerson = arrayPersona.find((people) => people.firstName == personaElegida);
 
 console.log("****************************");
-console.log(findPerson);
+console.table(findPerson);
 console.log("****************************");
+
+/** ----- version corregida que encuentra cualquier coincidencia */
+let coincidence = prompt("Ingrese el texto que desea buscar: ");
+
+
+const findCoincidence = (arrayPersona, coincidence) => {
+    coincidence = coincidence.toLowerCase();
+    const filteredPeople = arrayPersona.filter(people => {
+        const names = people.firstName.toLowerCase();
+        return names.includes(coincidence) || names.startsWith(coincidence);
+    });
+
+    return filteredPeople;
+};
+
+
+console.log(findCoincidence());
 
 console.log("****************************");
 

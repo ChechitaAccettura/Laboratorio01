@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Formulario</title>
+</head>
+<body>
+    <form class="form-control col-6">
+        <fieldset class="form-control col-auto">
+                <label for="firstName" class="col-form-label-lg">Nombre</label>                                   
+                <input class="form-control-sm" type="text" id="firstName" required placeholder="Ingrese su nombre">
+
+                <label for="lastName" class="col-form-label-lg">Apellido</label>                                   
+                <input class="form-control-sm" type="text" id="lastName" required placeholder="Ingrese su apellido">
+
+                <label for="dni" class="col-form-label-lg">DNI</label>                                   
+                <input class="form-control-sm" type="text" id="dni" required placeholder="Ingrese su nº de documento">           
+        </fieldset>
+
+        <fieldset class="form-control col-auto">
+            <button class="btn btn-primary" type="button" id="agregar" onclick="addDataPersona()">Agregar</button>
+
+        </fieldset>
+
+        <table class="table-primary table-striped col-6 align-content-center align-self-center">
+            <thead>
+                <tr class="table-active">
+                    <td class="table-info col-sm-2">Nombre</td>
+                    <td class="table-info col-sm-2">Apellido</td>
+                    <td class="table-info col-sm-2"> DNI</td>
+                    <th class="table-info col-sm-2"> Acción</th>
+                </tr>
+            </thead>
+                
+            <tbody class="table-active"  id="listadoDeElementos">
+                <tr>
+                    <td colspan="4" class="text-align center"> No se encontraron registros...</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>         
