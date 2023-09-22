@@ -1,0 +1,100 @@
+:root {
+  --foreground-rgb: black;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: rgb(214, 112, 112);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0;   --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: rgb(214, 112, 112);
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.footer1 {
+  background-color: rgb(206, 209, 212);
+  bottom:0%;
+  width: 100%;
+  height: 10%;
+  clear: both;
+  margin-top: 20px;
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 15%;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+  font-weight: 400;
+}
+
+.link:hover {
+  text-decoration-line: underline;
+  text-shadow: 1px 1px 1px white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.hero {
+  width: 50%;
+  max-height: max-content;
+  background-color: gainsboro;
+  border-radius: 15px;
+  box-shadow: 1px 2px 1px rgb(127, 121, 163);
+}
+
+.row {
+  margin-top: 10px;
+}
+
+#img1 {
+  border-radius: 10px 0px 10px 0px;
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  width: 20rem;
+  margin: 10px;
+  clear: both;
+}
+
+.info {
+  max-width: 50%;
+  margin-top: 15%;
+  background-color: rgb(243, 208, 208);
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.contenedor-page{
+  display: flex;
+}
+
+.parrafo1{
+  text-indent: 5%;
+}
+
