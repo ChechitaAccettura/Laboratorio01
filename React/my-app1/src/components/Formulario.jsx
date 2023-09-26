@@ -1,56 +1,31 @@
 'use client';
+import { Input } from '@/components/InputForm';
 import { useRef, useState } from 'react';
 
 export const Form = () =>{
 
     const inputRef = useRef(null);
-    const videoRef = useRef(null);
-    const [isPlay, setIsPlay] = useState(false);
-   
+
     const handleClick= () =>{
-        inputRef.current.focus();
-        input1.value = '';
-    }
-
-    const handleClicVideo = () =>{
-        const play = !isPlay;
-                if (play) {
-            videoRef.current.play();
-        } else {
-            videoRef.current.pause();
-        }
-
+        
+        inputRef.current.focus();// esta parte no funciona -.-
+        Input.value = '';
+    
     }
 
     return (
         <>
         <div>
-            <form  class="form" action="">
-            <fieldset class="mb-3 row">
-                <legend> Datos personales  </legend>
-                <label class= "form-control">Nombre </label>
-                <input class="form-control"  id="input1" ref={inputRef} type='text'/>
+            <form action="">
+                <Input ref={inputRef} etiqueta= 'Nombre' placeholder= 'ingrese su nombre' clase= 'form-control' tipo='text' />
+                <Input  etiqueta= 'Cumpleaños' placeholder= 'Fecha de nacimiento' clase= 'form-control' tipo='date' />
+                <Input  etiqueta= 'E-mail' placeholder= 'ingrese su mail' clase= 'form-control' tipo='mail' />
+                <Input  etiqueta= 'Contraseña' placeholder= 'ingrese su clave' clase= 'form-control' tipo='password' />
 
-                <label class= "form-control">Cumpleaños</label>
-                <input class= "form-control" type="date"></input>
+                <button onClick={handleClick}> Enviar </button>
 
-                <input  class= "form-control"  type="email" required placeholder="Correo electrónico"></input>
-                <label  class= "form-control" > Contraseña </label>
-                <input type="password" />
-            </fieldset>
-
-            <button onClick={handleClick}> Enviar </button>
             </form>
-<br></br>
 
-<button onClick={handleClicVideo} > {isPlay ? 'Stop' : 'Play'} </button>
-<video ref= {videoRef} 
-        onPlay={()=>{setIsPlay(true)}}
-        onPause={()=>{setIsPlay(false)}}
-        >
-    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-        </source>
-</video>
         </div>
         </>
     );
